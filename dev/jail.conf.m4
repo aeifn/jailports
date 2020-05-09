@@ -7,6 +7,6 @@ path="/usr/local/jails/$name/root";
 mount.fstab=/usr/local/jails/$name/fstab;
 mount.devfs;
 
-tl {
+_NAME_ {
 	ip4.addr="_IP_";
 }
