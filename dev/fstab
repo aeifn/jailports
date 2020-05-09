@@ -1,0 +1,2 @@
+/usr/local/share/jail/releases/12.1-RELEASE /usr/local/jails/dev/root/.base nullfs ro 0 0
+/usr/home/egor/jailports/dev/code /usr/local/jails/dev/root/code nullfs ro 0 0

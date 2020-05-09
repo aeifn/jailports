@@ -1,0 +1,10 @@
+47,48c47,48
+<     #instance_dir = '/where/ever/your/instance/is'
+<     instance_dir = wikiconfig_dir
+---
+>     instance_dir = '/usr/local/www/wiki'
+>     #instance_dir = wikiconfig_dir
+109c109
+<     #acl_rights_before = u"YourName:read,write,delete,revert,admin"
+---
+>     acl_rights_before = u"Admin:read,write,delete,revert,admin"
