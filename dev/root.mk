@@ -1,3 +1,8 @@
+JAILDIR=	/usr/local/jails/${NAME}
+JAILROOT=	${JAILDIR}/root
+RELEASE =	12.1-RELEASE
+RELEASEDIR=/usr/local/share/jail/releases/${RELEASE}
+
 .for dir in .base dev root tmp user var usr/local
 DIRSCMD+=	mkdir -p ${JAILROOT}/${dir};
 .endfor
@@ -8,5 +13,16 @@ DIRSCMD+=	ln -sf /.base/${dir} ${JAILROOT}/${dir};
 DIRSCMD+=	ln -sf /.base/usr/${dir} ${JAILROOT}/usr/${dir};
 .endfor
 
-root:
-	${DIRSCMD}
+jail: install pkgs ip
+
+root: ; ${DIRSCMD}
+
+hosts: ; cp /etc/hosts .
+
+resolv.conf: ; cp /etc/resolv.conf .
+
+browse:
+	xdg-open http://${IP}
+
+ip:
+	@echo Jail\'s IP is ${IP}
