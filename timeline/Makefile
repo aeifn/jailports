@@ -1,2 +1,0 @@
-MAINTAINER=	egor@math.ru
-FAILED=		TRUE
