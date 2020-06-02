@@ -28,3 +28,5 @@ You can change NAME and IP of jail, defining like this:
 ```
 make NAME=jailname IP="lo1|10.0.0.1" install
 ```
+
+Please inspect sourcecode before use.
