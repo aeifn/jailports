@@ -12,6 +12,7 @@
 /usr/local/share/jail
  |- releases
     |- 12.1-RELEASE - extracted base.txz system
+```
 
 ## General usage
 
