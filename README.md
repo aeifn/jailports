@@ -13,10 +13,6 @@
  |- releases
     |- 12.1-RELEASE - extracted base.txz system
 
-/var/jail
- |- $jail_name - directory for jail-generated content. Mounted into jail's /var/storage, always stored on the host system.
-```
-
 ## General usage
 
 cd into jailport directory, run 
